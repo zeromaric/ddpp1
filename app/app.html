@@ -1,0 +1,35 @@
+<ion-menu [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Menu
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content style="background:url(assets/img/JTH3OIybT62M9rBjEd6p_Cameroon-Flag-HD-Wallpaper.jpg) no-repeat center;background-size:cover;" id="side-menu21">
+    <ion-list id="menu-list1">
+      <ion-item-sliding>
+        <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item1">
+          <ion-icon name="home" item-left></ion-icon>
+          Home
+        </ion-item>
+        <ion-item-options side="left">
+          <button ion-button color="positive"></button>
+        </ion-item-options>
+      </ion-item-sliding>
+      <ion-item color="positive" menuClose="" on-click="goToSignup()" id="menu-list-item10">
+        <ion-icon name="person-add" item-left></ion-icon>
+        SIGN UP
+      </ion-item>
+      <ion-item color="calm" menuClose="" on-click="goToLogin()" id="menu-list-item11">
+        <ion-icon name="log-in" item-left></ion-icon>
+        Log in (if you have an account)
+      </ion-item>
+      <ion-item color="positive" menuClose="" on-click="goToAbout()" id="menu-list-item29">
+        Help & About
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>
